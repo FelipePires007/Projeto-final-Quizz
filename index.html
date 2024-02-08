@@ -16,39 +16,58 @@
     </header>
 
     <main>
-        <section>
-        <img src="" alt="globo">
-        <h1> Em qual país essas cidades se localizam?</h1>
-        <p>Responda ao quiz e teste seus conhecimentos sobre as cidades de diversos países!</p>
-            <button>iniciar o quiz</button>
+        <section class="apresentacao">
+        <img src="https://img.freepik.com/fotos-premium/menina-segurando-globo-mundo_85369-854.jpg?size=626&ext=jpg" alt="globo"; width="1500">
+        <h1><b>De qual país é essa bandeira?</b></h1>
+        <p>Responda ao quiz e teste seus conhecimentos sobre as bandeiras de diversos países!</p>
+            <button class="start">iniciar o quiz</button>
         </section>
 
-        <section class="Pergunta1">
-            <img src="" alt="">
-            <p>Em qual país se localiza a cidade de Praga?</p>
+        <section class="Pergunta">
+            <img src="data:image/png;base64,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" alt="">
+            <p>A qual país pertence essa bandeira?</p>
             <button>República Tcheca</button>
             <button>Bélgica</button>
             <button>Croácia</button>
             <button>Suíça</button>
         </section>
 
-         <section class="Pergunta2">
+         <section class="Pergunta">
                 <img src="" alt="">
-                <p>EBudapeste é uma cidade da:</p>
+                <p>Essa é a bandeira da:</p>
                 <button>Hungria</button>
                 <button>República Tcheca</button>
                 <button>Turquia</button>
                 <button>Áustria</button>
          </section>
 
-         <section class="Pergunta3">
+         <section class="Pergunta">
             <img src="" alt="">
-            <p>O Alasca fica em qual país?</p>
+            <p>Essa é a bandeira da:</p>
             <button>Noruega</button>
             <button>Estados Unidos</button>
             <button>Rússia</button>
             <button>Canadá</button>
-     </section>
+        </section>
+
+        <section class="Pergunta">
+            <img src="" alt="">
+            <p>Essa é a bandeira da:</p>
+            <button>Noruega</button>
+            <button>Estados Unidos</button>
+            <button>Rússia</button>
+            <button>Canadá</button>]
+        </section>
+
+        <section class="Pergunta">
+            <img src="" alt="">
+            <p>Essa é a bandeira da:</p>
+            <button>Noruega</button>
+            <button>Estados Unidos</button>
+            <button>Rússia</button>
+            <button>Canadá</button>
+        </section>
+
     </main>
 
 </body>
