@@ -15,6 +15,18 @@ flex-direction: column;
 gap: 5px;
 }
 
+main {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     width: 100%;
     padding: 5px;
@@ -23,3 +35,9 @@ button {
     color: aliceblue;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
