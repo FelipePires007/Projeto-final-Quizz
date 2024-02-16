@@ -11,3 +11,13 @@ font-size: 20px;
 .container{
     margin-top: 20%;
 }
+button {
+padding: 20px 40px;
+font-size: 18px;
+background-color: #f7f7f6;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+color: rgb (0,0,0);
+transition: background-color 0.3s;
+}

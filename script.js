@@ -5,3 +5,10 @@ const perguntas = [
     "Qual é a comida favorita do Quico?" ,
     "O que o chaves diz quando fica nervoso?"
 ] ;
+const alternativas = [
+    ["Sr. Barriga", "Seu Madruga", "Chiquinha", "Prof. Girafales"],
+    ["Seu Madruga", "Chaves", "Chiquinha", "Nhonho"],
+    ["Prof. Girafales", "Sr. Barriga", "Chiquinha", "Seu Madruga"],
+    ["Sanduíche de presunto", "Bolo de chocolate", "Torta de frango", "Sanduíche de presunto e leite"],
+    ["Foi sem querer querendo", "Isso, isso, isso!", "Tá tá tá!", "Que que foi, que que foi, que que há!"]
+];
