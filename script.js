@@ -10,7 +10,7 @@ const answers = [
     ["Sr. Barriga", "Seu Madruga", "Chiquinha", "Prof. Girafales"],
     ["Seu Madruga", "Chaves", "Chiquinha", "Nhonho"],
     ["Prof. Girafales", "Sr. Barriga", "Chiquinha", "Seu Madruga"],
-    ["Sanduíche de presunto", "Bolo de chocolate", "Torta de frango", "Sanduíche de presunto e leite"],
+    ["Sanduíche de presunto", "Bolo de chocolate", "Torta de frango", "Pastel"],
     ["Foi sem querer querendo", "Isso, isso, isso!", "Tá tá tá!", "Que que foi, que que foi, que que há!"]
 ];
 
@@ -20,12 +20,16 @@ function startQuiz() {
     for (let i = 0; i < questions.length; i++) {
         const userAnswer = prompt(questions[i] + "\n" + answers[i].join(", "));
 
-        if (!userAnswer || userAnswer.toLowerCase() !== answers[i][0].toLowerCase()) {
+        if (!userAnswer || !answers[i].includes(userAnswer.trim())) {
             endQuiz(score);
             return;
         } else {
             score++;
         }
+    }
+
+    if (score === questions.length) {
+        alert("Parabéns! Você acertou todas as perguntas!");
     }
 
     endQuiz(score);
