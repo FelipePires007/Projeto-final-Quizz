@@ -12,3 +12,22 @@ const alternativas = [
     ["Sanduíche de presunto", "Bolo de chocolate", "Torta de frango", "Sanduíche de presunto e leite"],
     ["Foi sem querer querendo", "Isso, isso, isso!", "Tá tá tá!", "Que que foi, que que foi, que que há!"]
 ];
+
+function startQuiz() {
+    let score = 0;
+
+
+    for (let i = 0; i < questions.length; i++) {
+        const userAnswer = prompt(questions[i] + "\n" + answers[i].join(", "));
+
+
+        if (!userAnswer || userAnswer.toLowerCase() !== answers[i][0].toLowerCase()) {
+            endQuiz(score);
+            return;
+        } else {
+            score++;
+        }
+    }
+
+    endQuiz(score);
+}
