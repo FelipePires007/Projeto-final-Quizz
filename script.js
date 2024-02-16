@@ -28,6 +28,10 @@ function startQuiz() {
             score++;
         }
     }
-
+function endQuiz(score) {
+    alert(`Que pena! Você errou uma pergunta. Seu placar final é: ${score} de ${questions.length}`);
+    }
+    
+    
     endQuiz(score);
 }
